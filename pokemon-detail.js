@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const MAX_POKEMONS = 151;
    const pokemonID = new URLSearchParams(window.location.search).get("id");
    const id = parseInt(pokemonID, 10);
-   if (isNaN(id) || id < 1 || id > MAX_POKEMONS) {
+   if ( id < 1 || id > MAX_POKEMONS) {
       
       /*  window.location.href = "./index.html";
         return;*/
